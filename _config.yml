@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "武盛玮 | SwanWoo"
 title_separator          : "-"
 name                     : &name "武盛玮"
-description              : &description "武盛玮的个人技术博客与作品集 — 安全工程师 / Python & C++ 开发者"
+description              : &description "武盛玮的个人技术博客与作品集 — Python & C++ 开发者 / AI Infra 推理加速"
 url                      : https://SwanWoo.github.io
 baseurl                  : ""
 repository               : "SwanWoo/SwanWoo.github.io"
@@ -25,9 +25,9 @@ author:
   avatar           : "profile.png"
   name             : "武盛玮 (SwanWoo)"
   pronouns         : "他/he"
-  bio              : "安全服务工程师 / Python & C++ 开发者，专注于渗透测试、RAG 系统与大模型应用开发"
+  bio              : "Python & C++ 开发者，专注于 AI Infra 推理加速、RAG / GraphRAG 系统与大模型应用开发"
   location         : "上海，中国"
-  employer         : "上海第二工业大学"
+  employer         : "澳门科技大学"
   uri              : # URL
   email            : "swan.wu.dev@gmail.com"
 

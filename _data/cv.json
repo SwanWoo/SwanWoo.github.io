@@ -4,7 +4,7 @@
     "email": "swan.wu.dev@gmail.com",
     "phone": "",
     "website": "https://SwanWoo.github.io",
-    "summary": "安全服务工程师 / Python & C++ 开发者。具备扎实的 Linux、网络安全和软件开发经验，专注于渗透测试、RAG 系统与大模型应用开发。",
+    "summary": "Python & C++ 开发者，专注于 AI Infra 推理加速、RAG / GraphRAG 系统与大模型应用开发。",
     "location": {
       "address": "",
       "postalCode": "",
@@ -36,19 +36,6 @@
       ]
     },
     {
-      "company": "绿盟科技集团股份有限公司",
-      "position": "安全服务工程师（实习）",
-      "website": "",
-      "startDate": "2025-05",
-      "endDate": "2025-09",
-      "summary": "独立完成 20+ 套政府/金融/运营商对外业务系统的黑盒+灰盒渗透测试，覆盖 Web、API、移动 App 三类场景。",
-      "highlights": [
-        "累计发现 90+ 个有效漏洞（含 9 个高危 SQL 注入、3 个后台 Getshell）",
-        "参加 1 次国家级征信中心攻防演练，作为蓝方 28 天内累计等级研判 1800+ 条可疑数据",
-        "输出标准化报告与复测报告各 30 余份，报告一次通过率 100%"
-      ]
-    },
-    {
       "company": "上海泛超数字科技有限公司",
       "position": "初级系统工程师（实习）",
       "website": "",
@@ -64,6 +51,15 @@
     }
   ],
   "education": [
+    {
+      "institution": "澳门科技大学",
+      "area": "应用数学与数据科学",
+      "studyType": "硕士",
+      "startDate": "2026-09",
+      "endDate": "2028-07",
+      "gpa": null,
+      "courses": []
+    },
     {
       "institution": "上海第二工业大学",
       "area": "网络工程",
@@ -115,16 +111,6 @@
       ]
     },
     {
-      "name": "Web 与安全",
-      "keywords": [
-        "FastAPI",
-        "Vue.js",
-        "渗透测试",
-        "Web 安全",
-        "OWASP"
-      ]
-    },
-    {
       "name": "AI / ML",
       "keywords": [
         "LangChain",
@@ -135,6 +121,13 @@
         "RAG",
         "GraphRAG",
         "推理加速"
+      ]
+    },
+    {
+      "name": "Web 开发",
+      "keywords": [
+        "FastAPI",
+        "Vue.js"
       ]
     },
     {
@@ -182,7 +175,7 @@
   ],
   "interests": [
     {
-      "name": "网络安全与渗透测试"
+      "name": "AI Infra 与推理加速"
     },
     {
       "name": "大模型应用开发"
