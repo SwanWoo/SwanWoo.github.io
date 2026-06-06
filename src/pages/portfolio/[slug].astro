@@ -14,9 +14,9 @@ const { project } = Astro.props;
 const { Content } = await project.render();
 ---
 
-<Layout title={project.data.title} description={project.data.description}>
-  <article class="project-detail">
-    <a href="/portfolio" class="back-link">← 返回项目列表</a>
+<Layout title={`${project.data.title} | 武盛玮`} description={project.data.description}>
+  <article class="project">
+    <a href="/portfolio" class="back">← 项目</a>
     <header>
       <h1>{project.data.title}</h1>
       <p class="subtitle">{project.data.description}</p>
@@ -36,67 +36,73 @@ const { Content } = await project.render();
 </Layout>
 
 <style>
-  .project-detail {
+  .project {
     padding: 3rem 0 2rem;
   }
 
-  .back-link {
+  .back {
     display: inline-block;
     color: var(--text-dim);
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     margin-bottom: 1.5rem;
+    transition: color 0.2s;
   }
-  .back-link:hover { color: var(--accent); }
+
+  .back:hover {
+    color: var(--accent);
+  }
 
   header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
   }
 
   h1 {
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 1.75rem;
+    font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .subtitle {
     color: var(--text-dim);
-    font-size: 1.05rem;
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
     line-height: 1.6;
   }
 
   .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.35rem;
   }
 
   .tag {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.65rem;
-    background: rgba(56, 189, 248, 0.08);
-    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.18rem 0.55rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 100px;
+    color: var(--text-dim);
     font-weight: 500;
   }
 
   .content {
     line-height: 1.8;
+    font-size: 0.95rem;
   }
 
   .content :global(h2) {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin: 2.5rem 0 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
+    margin: 2.5rem 0 0.75rem;
   }
 
   .content :global(h3) {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin: 2rem 0 0.75rem;
+    margin: 1.75rem 0 0.5rem;
   }
 
   .content :global(p) {
@@ -110,7 +116,7 @@ const { Content } = await project.render();
   }
 
   .content :global(li) {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.35rem;
     line-height: 1.7;
   }
 
@@ -120,7 +126,7 @@ const { Content } = await project.render();
   }
 
   .content :global(code) {
-    background: rgba(56, 189, 248, 0.08);
+    background: var(--surface);
     padding: 0.15rem 0.4rem;
     border-radius: 4px;
     font-size: 0.88em;
