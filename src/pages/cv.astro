@@ -1,0 +1,325 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="简历" description="武盛玮的简历 — AI Infra 开发者">
+  <section class="page-header">
+    <h1>简历</h1>
+    <p class="download-link">
+      <a href="mailto:swan.wu.dev@gmail.com?subject=简历索取">📩 索取 PDF 版本</a>
+    </p>
+  </section>
+
+  <!-- 教育经历 -->
+  <section class="section">
+    <h2 class="section-title">🎓 教育经历</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2026.09 — 2028.07</div>
+        <div class="timeline-content">
+          <h3>澳门科技大学 · 创新工程学院</h3>
+          <p class="subtitle">应用数学与数据科学 · 硕士</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2021.09 — 2026.07</div>
+        <div class="timeline-content">
+          <h3>上海第二工业大学</h3>
+          <p class="subtitle">网络工程 · 本科 · 计算机与信息工程学院</p>
+          <p class="detail">GPA: 3.8 / 5.00</p>
+          <p class="detail">核心课程：数据结构、算法设计与分析、计算机网络、操作系统、面向对象开发</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 实习经历 -->
+  <section class="section">
+    <h2 class="section-title">💼 实习经历</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2025.10 — 至今</div>
+        <div class="timeline-content">
+          <h3>优刻得科技股份有限公司</h3>
+          <p class="subtitle">AI Infra 实习生 · 上海</p>
+          <ul>
+            <li>基于 vLLM 等推理框架进行大模型推理加速与性能优化部署</li>
+            <li>开发 AI Agent 应用，基于 RAG / GraphRAG 架构构建知识检索与智能问答系统</li>
+            <li>参与模型推理链路端到端优化：请求调度、KV Cache 管理、批处理策略</li>
+            <li>探索 GraphRAG 等新型检索增强方案，提升多跳推理与复杂关联查询能力</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2024.07 — 2025.01</div>
+        <div class="timeline-content">
+          <h3>上海泛超数字科技有限公司</h3>
+          <p class="subtitle">初级系统工程师（实习）· 上海</p>
+          <ul>
+            <li>使用 vLLM 部署大模型推理服务，完成系统环境搭建与稳定运行保障</li>
+            <li>运用 Linux 运维工具监控系统资源，分析网络流量识别异常访问模式</li>
+            <li>排查系统运行进程与可疑文件，提升系统整体安全性</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专业技能 -->
+  <section class="section">
+    <h2 class="section-title">🛠 专业技能</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>编程语言</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">Shell</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>AI / ML</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">vLLM</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">LlamaIndex</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">GraphRAG</span>
+          <span class="skill-tag">推理加速</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Web 开发</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">Vue.js</span>
+          <span class="skill-tag">WebSocket</span>
+          <span class="skill-tag">HTMX</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>系统与运维</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Nginx</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">systemd</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>数据库</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">Qdrant</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>网络工程</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">ISIS</span>
+          <span class="skill-tag">OSPF</span>
+          <span class="skill-tag">BGP</span>
+          <span class="skill-tag">L3VPN</span>
+          <span class="skill-tag">L2VPN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 荣誉奖项 -->
+  <section class="section">
+    <h2 class="section-title">🏆 荣誉奖项</h2>
+    <div class="awards-list">
+      <div class="award-item">
+        <span class="award-icon">🥈</span>
+        <div>
+          <strong>校级二等奖学金</strong>（专业前 10%）
+          <span class="award-org">— 上海第二工业大学</span>
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-icon">🥉</span>
+        <div>
+          <strong>ASC 世界大学生超级计算机竞赛二等奖</strong>
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-icon">🥉</span>
+        <div>
+          <strong>蓝桥杯市三等奖</strong>
+        </div>
+      </div>
+      <div class="award-item">
+        <span class="award-icon">🥉</span>
+        <div>
+          <strong>数学建模竞赛三等奖</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    padding: 3.5rem 0 1.5rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .download-link a {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .timeline-date {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    padding-top: 0.15rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .detail {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-content ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+  }
+
+  .timeline-content li {
+    margin-bottom: 0.35rem;
+    line-height: 1.65;
+  }
+
+  /* Skills */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .skill-group h3 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .skill-tag {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.7rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    color: var(--text-dim);
+    font-weight: 500;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .skill-tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* Awards */
+  .awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .award-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.92rem;
+  }
+
+  .award-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .award-item strong {
+    color: var(--text);
+  }
+
+  .award-org {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 640px) {
+    .timeline-item {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+    .timeline-date {
+      font-size: 0.8rem;
+    }
+  }
+</style>
