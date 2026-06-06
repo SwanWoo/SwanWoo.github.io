@@ -1,152 +1,202 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "武盛玮",
+    "email": "swan.wu.dev@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://SwanWoo.github.io",
+    "summary": "安全服务工程师 / Python & C++ 开发者。具备扎实的 Linux、网络安全和软件开发经验，专注于渗透测试、RAG 系统与大模型应用开发。",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "上海",
+      "countryCode": "CN",
+      "region": "上海"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "SwanWoo",
+        "url": "https://github.com/SwanWoo"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "优刻得科技股份有限公司",
+      "position": "AI Infra 实习生",
+      "website": "https://www.ucloud.cn",
+      "startDate": "2025-10",
+      "endDate": "至今",
+      "summary": "负责大模型推理加速与 AI Agent 开发，基于 RAG / GraphRAG 架构构建智能应用。",
+      "highlights": [
+        "负责大模型推理加速，基于 vLLM 等推理框架进行性能优化与部署",
+        "开发 AI Agent 应用，基于 RAG / GraphRAG 架构构建知识检索与智能问答系统",
+        "参与模型推理链路端到端优化，包括请求调度、KV Cache 管理、批处理策略",
+        "探索 GraphRAG 等新型检索增强方案，提升多跳推理与复杂关联查询能力"
+      ]
+    },
+    {
+      "company": "绿盟科技集团股份有限公司",
+      "position": "安全服务工程师（实习）",
+      "website": "",
+      "startDate": "2025-05",
+      "endDate": "2025-09",
+      "summary": "独立完成 20+ 套政府/金融/运营商对外业务系统的黑盒+灰盒渗透测试，覆盖 Web、API、移动 App 三类场景。",
+      "highlights": [
+        "累计发现 90+ 个有效漏洞（含 9 个高危 SQL 注入、3 个后台 Getshell）",
+        "参加 1 次国家级征信中心攻防演练，作为蓝方 28 天内累计等级研判 1800+ 条可疑数据",
+        "输出标准化报告与复测报告各 30 余份，报告一次通过率 100%"
+      ]
+    },
+    {
+      "company": "上海泛超数字科技有限公司",
+      "position": "初级系统工程师（实习）",
+      "website": "",
+      "startDate": "2024-07",
+      "endDate": "2025-01",
+      "summary": "完成系统环境部署，确保应用稳定运行，支持大模型业务上线。",
+      "highlights": [
+        "使用 vLLM 架构来调用大模型推理，完成系统环境部署",
+        "熟练运用 Linux 运维指令，监控系统资源使用率，保障服务器稳定运行",
+        "分析网络流量数据，识别异常访问模式，预防潜在网络安全风险",
+        "分析系统运行进程，排查可疑病毒文件，提升系统整体安全性"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "上海第二工业大学",
+      "area": "网络工程",
+      "studyType": "本科",
+      "startDate": "2021-09",
+      "endDate": "2026-07",
+      "gpa": "3.8 / 5.00",
+      "courses": [
+        "C语言程序设计",
+        "数据结构",
+        "算法设计与分析",
+        "计算机网络",
+        "操作系统",
+        "面向对象开发与设计"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "publications": [
+  "awards": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
+      "title": "校级二等奖学金（专业前10%）",
       "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "awarder": "上海第二工业大学"
+    },
+    {
+      "title": "蓝桥杯市三等奖",
+      "date": "",
+      "awarder": ""
+    },
+    {
+      "title": "ASC世界大学生超级计算机竞赛二等奖",
+      "date": "",
+      "awarder": ""
+    },
+    {
+      "title": "数学建模竞赛三等奖",
+      "date": "",
+      "awarder": ""
     }
-  ]
+  ],
+  "skills": [
+    {
+      "name": "编程语言",
+      "keywords": [
+        "Python",
+        "C/C++",
+        "Shell",
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Web 与安全",
+      "keywords": [
+        "FastAPI",
+        "Vue.js",
+        "渗透测试",
+        "Web 安全",
+        "OWASP"
+      ]
+    },
+    {
+      "name": "AI / ML",
+      "keywords": [
+        "LangChain",
+        "LlamaIndex",
+        "vLLM",
+        "OpenAI API",
+        "PyTorch",
+        "RAG",
+        "GraphRAG",
+        "推理加速"
+      ]
+    },
+    {
+      "name": "系统与运维",
+      "keywords": [
+        "Linux",
+        "Docker",
+        "Nginx",
+        "Git",
+        "systemd",
+        "Shell 脚本"
+      ]
+    },
+    {
+      "name": "数据库",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Qdrant"
+      ]
+    },
+    {
+      "name": "网络工程",
+      "keywords": [
+        "ISIS",
+        "OSPF",
+        "BGP",
+        "IGMP",
+        "L3VPN",
+        "L2VPN"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "中文",
+      "fluency": "母语"
+    },
+    {
+      "language": "英语",
+      "fluency": "工作交流"
+    }
+  ],
+  "interests": [
+    {
+      "name": "网络安全与渗透测试"
+    },
+    {
+      "name": "大模型应用开发"
+    },
+    {
+      "name": "量化交易"
+    },
+    {
+      "name": "开源贡献"
+    }
+  ],
+  "references": [],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
