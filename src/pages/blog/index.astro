@@ -37,24 +37,27 @@ const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a
 
 <style>
   .page-header {
-    padding: 3rem 0 1.5rem;
+    padding: 3.5rem 0 1.75rem;
   }
 
   .page-header h1 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 0.35rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
   }
 
   .page-header p {
     color: var(--text-dim);
-    font-size: 0.92rem;
+    font-size: 0.88rem;
+    font-style: italic;
   }
 
   .empty {
     color: var(--text-dim);
     text-align: center;
     padding: 3rem 0;
+    font-style: italic;
   }
 
   .entry-list {
@@ -64,7 +67,7 @@ const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a
   }
 
   .entry-list li {
-    padding: 0.85rem 0;
+    padding: 0.9rem 0;
     border-bottom: 1px solid var(--border);
   }
 
@@ -75,28 +78,31 @@ const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a
   .entry-link {
     display: flex;
     align-items: baseline;
-    gap: 1rem;
+    gap: 1.25rem;
     color: var(--text);
-    transition: color 0.2s;
+    transition: opacity 0.3s ease;
     flex-wrap: wrap;
   }
 
   .entry-link:hover {
-    color: var(--accent);
+    opacity: 0.55;
   }
 
   time {
-    font-size: 0.8rem;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.78rem;
     color: var(--text-dim);
     white-space: nowrap;
     flex-shrink: 0;
     min-width: 80px;
     font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
   }
 
   .entry-title {
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 0.03em;
   }
 
   .entry-tags {
@@ -106,13 +112,13 @@ const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a
   }
 
   .tag {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     padding: 0.15rem 0.5rem;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 100px;
+    border-radius: 3px;
     color: var(--text-dim);
-    font-weight: 500;
+    letter-spacing: 0.04em;
   }
 
   @media (max-width: 640px) {

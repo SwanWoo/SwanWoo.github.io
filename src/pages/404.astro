@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 | 武盛玮" description="页面未找到">
+  <section class="not-found">
+    <h1>404</h1>
+    <p class="subtitle">页面走丢了。</p>
+    <a href="/" class="home-link">← 回到首页</a>
+  </section>
+</Layout>
+
+<style>
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh;
+    padding: 3rem 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-dim);
+    margin-bottom: 2rem;
+  }
+
+  .home-link {
+    color: var(--accent);
+    font-size: 0.88rem;
+    letter-spacing: 0.04em;
+    transition: opacity 0.25s;
+  }
+
+  .home-link:hover {
+    opacity: 0.6;
+  }
+</style>
