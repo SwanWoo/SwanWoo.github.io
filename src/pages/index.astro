@@ -90,7 +90,7 @@ const projects = (await getCollection('portfolio', ({ data }) => !data.draft))
     <ul class="entry-list">
       <li>
         <div class="entry-row">
-          <time>2026.02 — 08</time>
+          <time>2026.02 — 2026.08</time>
           <div>
             <div class="entry-title">优刻得科技股份有限公司</div>
             <div class="entry-sub">AI Infra 实习生 · 上海</div>
@@ -293,9 +293,10 @@ const projects = (await getCollection('portfolio', ({ data }) => !data.draft))
   }
 
   .entry-row {
-    display: flex;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
     gap: 1.25rem;
+    align-items: baseline;
   }
 
   time {
@@ -303,8 +304,6 @@ const projects = (await getCollection('portfolio', ({ data }) => !data.draft))
     font-size: 0.78rem;
     color: var(--text-dim);
     white-space: nowrap;
-    flex-shrink: 0;
-    min-width: 90px;
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.02em;
   }
@@ -393,7 +392,7 @@ const projects = (await getCollection('portfolio', ({ data }) => !data.draft))
     }
 
     .entry-row {
-      flex-direction: column;
+      grid-template-columns: 1fr;
       gap: 0.15rem;
     }
 
