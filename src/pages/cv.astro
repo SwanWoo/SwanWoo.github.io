@@ -200,13 +200,16 @@ import Layout from '../layouts/Layout.astro';
 
   /* Timeline */
   .timeline {
-    display: grid;
-    grid-template-columns: 13rem 1fr;
-    gap: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
   }
 
   .timeline-item {
-    display: contents;
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    gap: 1.5rem;
+    align-items: start;
   }
 
   time {
@@ -322,18 +325,13 @@ import Layout from '../layouts/Layout.astro';
   }
 
   @media (max-width: 640px) {
-    .timeline {
-      display: block;
-    }
-
     .timeline-item {
-      display: block;
-      margin-bottom: 1.75rem;
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
     }
 
     time {
-      display: block;
-      margin-bottom: 0.25rem;
+      padding-top: 0;
     }
   }
 </style>
