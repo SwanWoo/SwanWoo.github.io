@@ -16,7 +16,7 @@ const navItems = [
 ---
 
 <!doctype html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,11 +31,11 @@ const navItems = [
     />
     <title>{title}</title>
     <script is:inline>
-      (function() {
-        const saved = localStorage.getItem('theme');
-        const theme = saved || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-      })();
+      // Only apply light theme if user explicitly chose it;
+      // otherwise :root CSS defaults to dark — no flash, no stale values
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
     </script>
   </head>
   <body>
@@ -82,33 +82,22 @@ const navItems = [
     <script is:inline>
       document.getElementById('theme-toggle').addEventListener('click', function() {
         var html = document.documentElement;
-        var current = html.getAttribute('data-theme') || 'dark';
-        var next = current === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
+        var isLight = html.getAttribute('data-theme') === 'light';
+        if (isLight) {
+          html.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          html.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+        }
       });
     </script>
   </body>
 </html>
 
 <style is:global>
-  /* ── Light mode: warm paper ── */
+  /* ── Dark theme (default — applied immediately, no flash) ── */
   :root {
-    --bg: #faf8f5;
-    --surface: #f0ede8;
-    --border: #ddd8cf;
-    --text: #2c2a27;
-    --text-dim: #7a756d;
-    --accent: #8b6914;
-    --header-bg: rgba(250, 248, 245, 0.9);
-    --code-bg: #f0ede8;
-    --code-text: #7b5e2c;
-    --max-w: 820px;
-    --radius: 6px;
-  }
-
-  /* ── Dark mode: warm literary ── */
-  [data-theme="dark"] {
     --bg: #1c1b1a;
     --surface: #2a2927;
     --border: #333130;
@@ -118,6 +107,21 @@ const navItems = [
     --header-bg: rgba(28, 27, 26, 0.9);
     --code-bg: #2a2927;
     --code-text: #d4a855;
+    --max-w: 820px;
+    --radius: 6px;
+  }
+
+  /* ── Light mode: warm paper (override) ── */
+  [data-theme="light"] {
+    --bg: #faf8f5;
+    --surface: #f0ede8;
+    --border: #ddd8cf;
+    --text: #2c2a27;
+    --text-dim: #7a756d;
+    --accent: #8b6914;
+    --header-bg: rgba(250, 248, 245, 0.9);
+    --code-bg: #f0ede8;
+    --code-text: #7b5e2c;
   }
 
   /* ── Reset ── */
@@ -139,7 +143,6 @@ const navItems = [
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.4s ease, color 0.3s ease;
   }
 
   a {
@@ -222,11 +225,11 @@ const navItems = [
     color: var(--accent);
   }
 
-  /* Theme icon visibility */
-  .icon-sun { display: none; }
-  .icon-moon { display: block; }
-  [data-theme="light"] .icon-sun { display: block; }
-  [data-theme="light"] .icon-moon { display: none; }
+  /* Theme icon visibility — default (dark): show sun; light: show moon */
+  .icon-sun { display: block; }
+  .icon-moon { display: none; }
+  [data-theme="light"] .icon-sun { display: none; }
+  [data-theme="light"] .icon-moon { display: block; }
 
   /* ── Main ── */
   main {
