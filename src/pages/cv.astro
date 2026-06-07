@@ -200,15 +200,13 @@ import Layout from '../layouts/Layout.astro';
 
   /* Timeline */
   .timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 1.75rem;
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    gap: 1.75rem 1.5rem;
   }
 
   .timeline-item {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
+    display: contents;
   }
 
   time {
@@ -216,8 +214,6 @@ import Layout from '../layouts/Layout.astro';
     font-size: 0.78rem;
     color: var(--text-dim);
     white-space: nowrap;
-    flex-shrink: 0;
-    min-width: 120px;
     padding-top: 0.2rem;
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.02em;
@@ -326,13 +322,18 @@ import Layout from '../layouts/Layout.astro';
   }
 
   @media (max-width: 640px) {
+    .timeline {
+      display: block;
+    }
+
     .timeline-item {
-      flex-direction: column;
-      gap: 0.25rem;
+      display: block;
+      margin-bottom: 1.75rem;
     }
 
     time {
-      min-width: auto;
+      display: block;
+      margin-bottom: 0.25rem;
     }
   }
 </style>
